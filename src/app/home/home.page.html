@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true">
+
+  <div class="window">
+    <div class="container">
+      <div class="title">
+        <img src="../../assets/images/amtrak_logo.png" alt="Amtrak logo">
+      </div>
+      <h1>Departure Time</h1>
+      <div class="departure">
+        <ion-input class="depin" type="number" class="hours" id="hrs" [(ngModel)]="hours" placeholder="Hour 0-23"></ion-input>
+        <ion-input class="depin" type="number" class="minutes" id="mins" [(ngModel)]="minutes" placeholder="Minutes 0-59"></ion-input>
+      </div>      
+      <h1>Trip Duration in Minutes</h1>
+      <div class="durationdiv">
+        <ion-input class="duration" type="number" id="mindur" class="duration" [(ngModel)]="duration" placeholder="Max 1500"></ion-input>
+      </div>
+      <ion-button class="button" (click)="submitted()" id="button" class="button">Submit</ion-button>
+      </div>
+    </div>
+</ion-content>
